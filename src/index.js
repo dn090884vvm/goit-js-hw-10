@@ -4,7 +4,7 @@ import { searchForCountry } from './fetchCountries';
 
 import Notiflix from 'notiflix';
 
-refs = {
+const refs = {
   inputField: document.querySelector('#search-box'),
   countryList: document.querySelector('.country-list'),
   countryInfo: document.querySelector('.country-info'),
