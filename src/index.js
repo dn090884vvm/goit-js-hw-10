@@ -90,3 +90,4 @@ function clearCountries() {
 //      return `<li>${capital}</li><li>${population}</li>`;
 //    })
 //    .join('');
+//--------------------------
