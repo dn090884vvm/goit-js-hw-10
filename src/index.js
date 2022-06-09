@@ -19,16 +19,16 @@ refs.inputField.addEventListener(
 );
 
 function onInputEnter() {
-  if (refs.inputField.value === '') {
+  const countryname = refs.inputField.value.trim();
+  console.log(countryname);
+  if (countryname === '') {
     clearCountries();
     return;
   }
 
   //   clearCountries();
 
-  searchForCountry(refs.inputField.value.trim())
-    .then(checkingValue)
-    .catch(errorInSearch);
+  searchForCountry(countryname).then(checkingValue).catch(errorInSearch);
 }
 
 function errorInSearch() {
